@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>functions</title>
+</head>
+<body>
+  <!--A JavaScript function is a block of code designed to perform a particular task.
+  A JavaScript function is executed when "something" invokes it (calls it).-->
+  <script>
+    //JavaScript Function Syntax
+    function name (parameter1, parameter2, parameter3) {
+                  // code to be executed
+                 }
+      //Function parameters are listed inside the parentheses () in the function definition.
+
+       //Function arguments are the values received by the function when it is invoked. 
+      //Function Return:When JavaScript reaches a return statement, the function will stop executing.
+      // Function is called, the return value will end up in x
+          let x = myFunction(4, 3);
+
+          function myFunction(a, b) {
+          // Function returns the product of a and b
+            return a * b;
+          }
+       console.log(x);
+      /*
+        Why Functions?
+
+        With functions you can reuse code
+
+        You can write code that can be used many times.
+
+        You can use the same code with different arguments, to produce different results.
+
+      */
+  </script>
+
+  <script>
+    //The () Operator invokes (calls)the function:
+    //example
+    function toCelsius(fahrenheit) {
+                return (5/9) * (fahrenheit-32);
+              }
+
+    let value = toCelsius(77);
+    console.log(`${value} Celsius Degree!`);
+
+    //note that Accessing a function without () returns the function and not the function result:
+
+    //example
+    let degree = toCelsius(77);
+    function toCelsius(fahrenheit) {
+                return (5/9) * (fahrenheit-32);
+              }
+
+    let valued = toCelsius;
+    console.log(valued);
+
+    /*
+    the above code will function instead of functiom result because we called the function without brackets.
+    */
+   /*
+   Note:
+   As you see from the examples above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+   */
+
+  </script>
+  <script>
+    //Functions Used as Variable Values
+    /*
+    Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.
+    */
+   //Example:
+   //Instead of using a variable to store the return value of a function:
+   let y = toCelsius(77);
+   let text = "The temperature is " + y + " Celsius";
+
+   //from above example You can use the function directly, as a variable value:
+   //let text = "The temperature is " + toCelsius(77) + " Celsius";
+   //in above code we commented you can see that the function substituted y.
+   
+  </script>
+
+  <script>
+    //Example
+    // Function to compute the product of p1 and p2
+      /*function myFunction(p1, p2) {
+        let product = p1 * p2;
+        return product;
+      }
+      */
+      //or you can write above code as follows and will work the same as the above codes:
+      
+      /*function myFunction (p1,p2){
+        return p1*p2;
+      }
+      */
+//similarly it works as this arrow function below
+      myFunction = (p1,p2) =>{
+        return p1*p2;
+      }
+
+    //below i'm going to call above function and passing argument to it!
+  
+    console.log(myFunction(2,77));
+    console.log(myFunction(3,45));
+    //the above function will print out the product in the console
+    // in this way you can call the function many times you want with different arguments.
+
+  </script>
+
+  <script>
+    //Arrow functions allow us to write shorter function syntax:
+//let myFunction = (a, b) => a * b;
+//before arrow: 
+
+
+    //this before arrow function:
+hello = function() {
+  return "Hello World!";
+}
+
+//With Arrow Function:
+
+hello = () => {
+  return "Hello World!";
+}
+
+/*
+It gets shorter! If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:
+*/
+
+//Arrow Functions Return Value by Default:
+
+hello = () => "Hello World!";
+
+//Note: This works only if the function has only one statement. so if not use return and brackets for your arrow fx.
+
+//If you have parameters, you pass them inside the parentheses:
+//Arrow Function With Parameters:
+hello = (val) => "Hello " + val;
+
+//In fact, if you have only one parameter, you can skip the parentheses as well:
+//Arrow Function Without Parentheses:
+hello = val => "Hello " + val;
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Structure</title>
+</head>
+<body>
+  <section class="title">
+    <h1>Control Structures</h1>
+    <ul>
+      <li><h3>CONDITIONAL STATEMENT</h3></li>
+      <li><h3>SWITCH STATEMENT</h3></li>
+      <li><dl>
+        <dt><h3>LOOPS:</h3></dt>
+        <dd>For</dd>
+        <dd>While</dd>
+        <dd>Do While</dd>
+      </dl></li>
+    </ul>
+  </section>
+  <section class="if-statement">
+    <h1>1.Conditional Statements:</h1>
+    <p>Conditional statements are used in performing different actions based on different conditions.</p>
+    <h3>if, else, and else if</h3>
+    <p>
+      <h4>1.If statement:</h4>
+      is used when you want to execute a block of code for a true condition.
+    </p>
+    <p>
+      <h4>2.Else statement:</h4>
+      is used when you want to execute a block of code for a false condition.
+    </p>
+    <p>
+      <h4>3.Else if statement:</h4>
+      is used when you want to execute a block of code to take off when the first condition is false.
+    </p>
+    <p>
+      <h4>4.Switch statement:</h4>
+      is used to declare many alternative blocks of code to be executed.
+    </p>
+   
+  </section>
+
+  <!---You can place any number of scripts in an HTML document.-->
+  <!--below is an example that will demostrate how if , else if and else -->
+  <h2>If, else if, else example:</h2>
+
+<p>This demostrate how the browser can choose a greeting based on the local time of the user:</p>
+
+<p id="gEt"></p>
+
+<script>
+const time = new Date().getHours();
+let salute;
+if (time < 10) {
+  salute = "Good morning!";
+} else if (time < 20) {
+  salute = "Good day!";
+} else {
+  salute = "Good evening!";
+}
+document.getElementById("gEt").innerHTML = salute;
+</script>
+<script>
+  let userTemp;
+  const bodyTemp = 38;
+  console.log(`normal body temperature is ${bodyTemp}`);
+  if (bodyTemp === userTemp){
+    alert(`Your body temperature is ${userTemp} and it is equal to The body temperature which is normally: ${bodyTemp} celecius degree!!`)
+  } else if (bodyTemp > userTemp){
+  alert(`Your body temperature is ${userTemp} and it is less than The body temperature which is normally: ${bodyTemp} celecius degree!`)
+  } else if (bodyTemp < userTemp) {
+    alert(`Your body temperature is ${userTemp} and it is greater than The body temperature which is normally: ${bodyTemp} celecius degree!
+    Something might not be good!`)
+  }
+</script>
+
+</body>
+</html>

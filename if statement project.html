@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="temperatureForm">
+    <label for="temperatureInput">Enter your temperature:</label>
+    <input type="number" id="temperatureInput" placeholder="e.g., 36">
+    <button type="button" onclick="checkTemperature()">Check</button>
+</form>
+<p id="resultMessage"></p>
+  
+<script>
+  function checkTemperature() {
+    const temperature = parseFloat(document.getElementById("temperatureInput").value);
+
+    // Define normal temperature range
+    const minNormalTemp = 36;
+    const maxNormalTemp = 37;
+
+    if (temperature >= minNormalTemp && temperature <= maxNormalTemp) {
+        document.getElementById("resultMessage").textContent = "Your temperature is normal. Stay healthy!";
+    } else if (temperature < minNormalTemp) {
+        document.getElementById("resultMessage").textContent = "Your temperature is below normal. Rest and hydrate.";
+    } else {
+        document.getElementById("resultMessage").textContent = "Your temperature is above normal. Monitor your health.";
+    }
+  }
+</script>
+</body>
+</html>
