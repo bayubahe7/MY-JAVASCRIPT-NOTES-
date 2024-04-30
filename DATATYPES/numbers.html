@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbers Summary</title>
+</head>
+<body>
+  <p>
+    <!--below they are explaining that :
+    niwandika imibare myinshi irenga 15 itariho decimal iyo mibare ntizaba acurate
+  ikindi ni uko javascript itarenza imibare 17 inyuma ya decimal point!-->
+  <h1>JavaScript Numbers</h1>
+
+    <h2>Integers Precision</h2> 
+    Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+    <strong>The maximum number of decimals is 17.</strong>
+  </p>
+  <p>
+    <h2>Adding Numbers and Strings</h2>
+    <h3>WARNING !!</h3>
+    JavaScript uses the + operator for both addition and concatenation.
+    <br>
+    <br>
+    <strong>Numbers are added. Strings are concatenated.</strong>
+    <br>
+    <br>
+    <em>The JavaScript interpreter works from left to right.</em>
+
+    
+  </p>
+  <!--JavaScript will try to convert strings to numbers when dividing:-->
+  
+<p>JavaScript will try to convert strings to numbers when dividing:</p>
+
+<p id="demo"></p>
+
+<script>
+  //you see that the variable stores string but the result on the page is number!
+let x = "100";
+let y = "10";
+let z = x / y;   // also subtraction and multiplication but not for addition 
+//addition will concatenate the string.
+document.getElementById("demo").innerHTML = z;
+
+//NaN is a JavaScript reserved word indicating that a number is not a legal number.
+// example
+document.getElementById("demo").innerHTML = 100 / "Apple";
+// the result is NaN
+//However, if the string is numeric, the result will be a number:
+//example:
+document.getElementById("demo").innerHTML = 100 / "10";
+//You can use the global JavaScript function isNaN() to find out if a value is not a number:
+//let check the examle below if is NaN
+let MapX = 100/ "apple";
+document.getElementById("demo").innerHTML = isNaN(MapX);
+// the above code returns True because our variable is not a number!
+//Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN:
+let xP = NaN;
+let yP = 5;
+document.getElementById("demo").innerHTML = xP + yP;
+//result is NaN
+//Or the result might be a concatenation like NaN5:
+ //example:
+ let p = NaN;
+let o = "5";
+let w = p + o;
+//will be concatenated as NaN is number and "5" a string
+//NaN is a number: typeof NaN returns number:
+let xo = NaN;
+document.getElementById("demo").innerHTML = typeof xo;
+</script>
+
+<p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+
+<p id="demoy"></p>
+
+<script>
+  //Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+let myNumber = 2; 
+let txt = "";
+while (myNumber != Infinity) {
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demoy").innerHTML = txt;
+</script>
+
+<!--Division by zero generates Infinity-->
+
+<p>Division by zero generates Infinity;</p>
+
+<p id="demop"></p>
+
+<script>
+let xh = 2/0;
+let yh = -2/0;
+document.getElementById("demop").innerHTML = xh + "<br>" + yh;
+
+//Infinity is a number: typeof Infinity returns number.
+</script>
+<p>The toString() method can output numbers from base 2 to 36:</p>
+
+
+<!--
+//Never write a number with a leading zero (like 07).
+Some JavaScript versions interpret numbers as octal if they are written with a leading zero.
+
+By default, JavaScript displays numbers as base 10 decimals.
+
+But you can use the toString() method to output numbers from base 2 to base 36.
+
+Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+-->
+
+<p id="demow"></p>
+
+<script>
+let my_Number = 32;
+document.getElementById("demow").innerHTML =
+"Decimal 32 = " + "<br><br>" + 
+
+"Hexatrigesimal (base 36): " + my_Number.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + my_Number.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + my_Number.toString(16) + "<br>" +
+"Duodecimal (base 12): " + my_Number.toString(12) + "<br>" +
+"Decimal (base 10): " + my_Number.toString(10) + "<br>" +
+"Octal (base 8): " + my_Number.toString(8) + "<br>" +
+"Binary (base 2): " + my_Number.toString(2);
+</script>
+
+<!--JavaScript Numbers as Objects-->
+<!--
+  numbers can also be defined as objects with the keyword new:
+  examle: let y = new Number(123);
+
+//Do not create Number objects.
+
+The new keyword complicates the code and slows down execution speed.
+
+Number Objects can produce unexpected results:
+
+//Comparing two JavaScript objects always returns false.
+-->
+
+
+  
+</body>
+</html>

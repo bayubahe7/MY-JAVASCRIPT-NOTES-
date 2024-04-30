@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Methods</title>
+</head>
+<body>
+  <!--
+
+These number methods can be used on all JavaScript numbers:
+
+Method	             Description
+1.toString():	    Returns a number as a string
+
+2.toExponential():	 Returns a number written in exponential notation.
+
+3.toFixed()	Returns a number written with a number of decimals.
+
+4.toPrecision(): Returns a number written with a specified length.
+
+5.valueOf()	      Returns a number as a number
+
+All number methods can be used on any type of numbers (literals, variables, or expressions).
+  -->
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="demo"></p>
+
+<!--toString Method Example-->
+
+<script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() //this will return x as the string
+  + (100 + 23).toString(); // turn the result of 100 + 23 as "123" i.e string.
+</script>
+
+<!--The toExponential() Method
+
+  //how it works:
+return a string with number rounded and written in exponention notation!
+
+to specify the number after decimal point before e value in parameter you write number to specify how many digits after decimal point
+
+  x.toExponential()  //will retain origin values after decimal
+  x.toExponential(0) // will remove decimal
+  x.toExponential(1)  // will retain one value
+  x.toExponential(2) // will retain two values
+
+  all many as you want!
+-->
+<!--example-->
+<p>An optional parameter defines the number of digits behind the decimal point.</p>
+
+<p id="dem"></p>
+
+<script>
+let l= 9.656;
+document.getElementById("dem").innerHTML =
+  l.toExponential(0) + "<br>" + 
+  l.toExponential(2) + "<br>" + 
+  l.toExponential(4) + "<br>" + 
+  l.toExponential(6);
+</script>
+
+<!--The toFixed() Method
+
+  //how it work?
+
+  toFixed() returns a string, with the number written with a specified number of decimals:
+
+  //i can say it is like above method except that it doesn't add exponent!
+     //example
+  let x = 9.656;
+x.toFixed(0); this will remove decimal point
+x.toFixed(2); will leave only 2 values after decimal point
+x.toFixed(4); will leave 4digit after decimal point 
+x.toFixed(6); will leave 6 digit after decimal point when values are finished it add zeros to achive this!
+
+N.B//toFixed(2) is perfect for working with money.
+-->
+
+<p id="deo"></p>
+
+<script>
+
+  //example for toFixed() Method specifie number after decimal
+
+let cd = 9.656;
+document.getElementById("deo").innerHTML =
+  cd.toFixed(0) + "<br>" +
+  cd.toFixed(2) + "<br>" +
+  cd.toFixed(4) + "<br>" +
+  cd.toFixed(6);
+</script>
+
+<!--The toPrecision() Method
+ //how it works?
+
+ //toPrecision() returns a string, with a number written with a specified length:
+
+ specify the number of values a given number can have including the number after decimal
+
+ Example
+let x = 9.656;
+x.toPrecision(); default
+x.toPrecision(2); harasigara imibare ibiri gusa
+x.toPrecision(4); harasigara imibare ine gusa
+x.toPrecision(6);  harasigara imibare itandatu gusa
+-->
+
+<!--example below makes it clear!-->
+
+<p id="dao"></p>
+
+<script>
+
+  //example for toPrecision() Method specifie length of the number
+
+  let ca = 9.656;
+document.getElementById("dao").innerHTML =
+  ca.toPrecision(0) + "<br>" +
+  ca.toPrecision(2) + "<br>" +
+  ca.toPrecision(4) + "<br>" +
+  ca.toPrecision(6);
+</script>
+<!--The valueOf() Method
+valueOf() returns a number as a number.
+The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
+
+N.B //There is no reason to use it in your code.
+
+All JavaScript data types have a valueOf() and a toString() method.
+-->
+  
+</body>
+</html>
