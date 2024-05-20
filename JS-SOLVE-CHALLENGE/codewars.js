@@ -98,3 +98,96 @@ function findAverage(array) {
   }
   return sum/array.length;
 }
+
+/*
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+
+Task
+Given a year, return the century it is in.
+
+Examples
+1705 --> 18
+1900 --> 19
+1601 --> 17
+2000 --> 20
+2742 --> 28
+Note: this kata uses strict construction
+*/
+
+//answer
+
+function century (year) {
+  let century = Math.ceil(year / 100); //Math.ceil () take number and round it up to the nearest number
+  return century;
+}
+
+/*
+Our football team has finished the championship.
+
+Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+
+For example: ["3:1", "2:2", "0:1", ...]
+
+Points are awarded for each match as follows:
+
+if x > y: 3 points (win)
+if x < y: 0 points (loss)
+if x = y: 1 point (tie)
+We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.
+
+Notes:
+
+our team always plays 10 matches in the championship
+0 <= x <= 4
+0 <= y <= 4
+
+*/
+
+//solution
+
+function points(games) {
+  let totalPoints = 0;
+  for (let game of games) {
+    const [x,y] = game.split(":").map(Number); //For each game, we split the game string into our team's score (x) and the opponent's score (y) using split(":") and convert them to numbers using map(Number).
+    if (x > y) {
+      totalPoints += 3;
+    } else if (x === y){
+      totalPoints += 1;
+    } else {
+      totalPoints;
+    }
+  }
+  
+  return totalPoints;
+}
+
+/*
+
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+
+*/
+
+//solution
+
+function booleanToString(b){
+  let result = "";
+  if (b === true || b === false) {
+   result += b.toString();
+  }
+  return result;
+}
+
+//or 
+
+/*
+function booleanToString(b){
+  if (typeof b == 'boolean') {
+    return String(b);
+  }
+}
+
+*/
+
+
