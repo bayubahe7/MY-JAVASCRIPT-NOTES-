@@ -22,6 +22,8 @@ multiTable(9);
 multiTable(10);
 */
 
+// nested loop technique
+
 for ( i = 0; i < 11; i++) {
   if(i > 0){
     console.log('...................................');
