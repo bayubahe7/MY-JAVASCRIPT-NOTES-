@@ -1,3 +1,4 @@
+/*
 function multiTable (n) {
   let range = 10;
   let result = 0;
@@ -19,3 +20,13 @@ multiTable(7);
 multiTable(8);
 multiTable(9);
 multiTable(10);
+*/
+
+for ( i = 0; i < 11; i++) {
+  if(i > 0){
+    console.log('...................................');
+  }
+  for (let n = 1; n < 11; n++) {
+    console.log(`${i} x ${n} = ${i} * ${n}`);
+  }
+}
