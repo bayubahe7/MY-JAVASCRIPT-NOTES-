@@ -1,6 +1,6 @@
 //challenge one reverse this two words //world and //word
 //Complete the solution so that it reverses the string passed into it.
-
+/*
 //'world'  =>  'dlrow'
 //'word'   =>  'drow'
 function solution(str){
@@ -56,7 +56,7 @@ const divisor = 2;
 const arrayx = [1,2,3,4,5,6]; 
 
 console.log(arrayx.filter((value) => value % divisor === 0));
-
+*/
 /*
 Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 
@@ -70,8 +70,10 @@ For example,
   false, false, true,  true]
 The correct answer would be 17.
 
+
 Hint: Don't forget to check for bad values like null/undefined
 */
+/*
 function countSheeps(sheep) {
   let count = 0;
    for (let i=0; i < sheep.length; i++){
@@ -98,6 +100,7 @@ function findAverage(array) {
   }
   return sum/array.length;
 }
+*/
 
 /*
 The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
@@ -113,6 +116,7 @@ Examples
 2742 --> 28
 Note: this kata uses strict construction
 */
+/*
 
 //answer
 
@@ -120,6 +124,7 @@ function century (year) {
   let century = Math.ceil(year / 100); //Math.ceil () take number and round it up to the nearest number
   return century;
 }
+*/
 
 /*
 Our football team has finished the championship.
@@ -143,8 +148,9 @@ our team always plays 10 matches in the championship
 
 */
 
-//solution
 
+//solution
+/*
 function points(games) {
   let totalPoints = 0;
   for (let game of games) {
@@ -160,6 +166,7 @@ function points(games) {
   
   return totalPoints;
 }
+*/
 
 /*
 
@@ -170,7 +177,7 @@ Note: Only valid inputs will be given.
 */
 
 //solution
-
+/*
 function booleanToString(b){
   let result = "";
   if (b === true || b === false) {
@@ -178,6 +185,7 @@ function booleanToString(b){
   }
   return result;
 }
+*/
 
 //or 
 
@@ -189,5 +197,20 @@ function booleanToString(b){
 }
 
 */
+/*
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
+For example, for [1, 2, 2] it should return 9 because 1**2 + 2**2 + 2**2 = 9
+*/
+/*
+function squareSum(numbers){
+  let summation = 0;
+    for (let i = 0; i < numbers.length; i++){
+     summation += numbers[i] ** 2;
+    }
+     return summation;
+  }
+  console.log(squareSum([1, 2, 2]));
+
+  */
 
