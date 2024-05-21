@@ -213,4 +213,57 @@ function squareSum(numbers){
   console.log(squareSum([1, 2, 2]));
 
   */
+ /*
+
+  //Convert boolean values to strings 'Yes' or 'No'.
+  //Solution
+
+  function boolToWord( bool ){
+    if (bool === true){
+      return 'Yes';
+    } else if (bool === false){
+      return 'No';
+    }
+  }
+
+  */
+
+  /*
+  Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"
+Names given are always valid strings.
+
+*/
+//solution
+
+//my answer
+/*
+
+function areYouPlayingBanjo(name) {
+  if(name.charAt(0) === 'R'|| name.charAt(0) === 'r') {
+    return name + " plays banjo";
+  } else {
+    return name + " does not play banjo";
+  }
+}
+//or this from other person
+
+*/
+
+/*
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === 'r') {
+    return name + ' plays banjo';
+  } else {
+    return name + ' does not play banjo';
+  }
+}
+*/
+
+
 
