@@ -290,7 +290,7 @@ Advanced users may find this extremely easy and can easily write this in one lin
 // solution
 
 //my answer
-
+/*
 function sum (numbers) {
   "use strict";
 let sum = 0;
@@ -303,6 +303,52 @@ for (let number of numbers) {
 }
   return sum;  
 };
+*/
+/*
+Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
+
+Examples (Input -> Output)
+* [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+* [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+* [42, 54, 65, 87, 0]             -> min = 0, max = 87
+* [5]                             -> min = 5, max = 5
+Notes
+You may consider that there will not be any empty arrays/vectors.
+*/
+
+//my answer
+
+var min = function(list) {
+  if (list.length === 0) {
+    throw new Error("Array is empty");
+  }
+  let minimum = list[0];
+  for (let i = 1; i < list.length; i++) {  // Corrected typo here
+    if (minimum > list[i]) {
+      minimum = list[i];
+    }
+  }
+  return minimum;
+}
+
+var max = function(list) {
+  if (list.length === 0) {  // Added empty array check here
+    throw new Error("Array is empty");
+  }
+  let maximum = list[0];
+  for (let i = 1; i < list.length; i++) {
+    if (maximum < list[i]) {
+      maximum = list[i];
+    }
+  }
+  return maximum;
+}
+
+// Example usage:
+const numbers = [3, 5, 1, 8, -2, 7];
+console.log(min(numbers)); // Output: -2
+console.log(max(numbers)); // Output: 8
+
 
 
 

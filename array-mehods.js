@@ -14,7 +14,8 @@ console.log(num.reverse()); //sort in descending order
 console.log(num.includes(2));//check if the array contain a specified value and return a boolean value
 console.log(num.map(number => number * 2)); //return new array with each element doubled
 console.log(num.filter(number => number < 12)); //filter the array and return new array with few numbers according to the set condition.
-console.log(num.find(number => number < 12));
+console.log(num.find(number => number < 12)); // find first match
+//to be continued...
 
 
 
