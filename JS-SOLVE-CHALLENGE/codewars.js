@@ -381,6 +381,94 @@ var stringToNumber = function(str){
   return parseInt(str, 10);
 }
 */
+/*
+A square of squares
+You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
+
+However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary rectangle! Those blasted things! If you just had a way to know, whether you're currently working in vain… Wait! That's it! You just have to check if your number of building blocks is a perfect square.
+
+Task
+Given an integral number, determine if it's a square number:
+
+In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+Examples
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false
+
+*/
+
+//solution my answer
+
+//perfect sqaure is a number in which its square root is an integer
+
+var isSquare = function(n){
+  let m =  Math.sqrt(n); //square root
+  if(Number.isInteger(m) === true) {
+    return true;
+  } else {
+     return false;
+  }
+ 
+}
+
+/*
+Clock shows h hours, m minutes and s seconds after midnight.
+
+Your task is to write a function which returns the time since midnight in milliseconds.
+
+Example:
+h = 0
+m = 1
+s = 1
+
+result = 61000
+*/
+
+//my answer 
+
+function past(h, m, s){
+  //converting hours minutes and seconds to millisecond
+  const msPerSec = 1000;
+  const msPerMin = msPerSec * 60;
+  const msPerHour = msPerMin * 60;
+  
+  //converting given time to milliseconds
+  const msInHour = h * msPerHour;
+  const msInMin = m * msPerMin;
+  const msInSec = s * msPerSec;
+  
+  //total milliseconds
+  const totalMilliSecs = msInHour + msInMin + msInSec;
+  return totalMilliSecs;
+}
+
+// solution from the other side
+
+function past(h, m, s){
+  // Create a Date object for the current date and set its time to the given hours, minutes, and seconds
+  const setTime = new Date().setHours(h, m, s);
+  
+  // Create another Date object for the current date and set its time to midnight (00:00:00)
+  const midnight = new Date().setHours(0, 0, 0);
+  
+  // Calculate the difference in milliseconds between the given time and midnight
+  return Math.round(setTime - midnight);
+}
+
+// Example usage:
+const h = 1;
+const m = 30;
+const s = 15;
+console.log(past(h, m, s)); // 5415000
+
+
 
 
 
