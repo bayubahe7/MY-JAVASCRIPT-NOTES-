@@ -468,6 +468,41 @@ const m = 30;
 const s = 15;
 console.log(past(h, m, s)); // 5415000
 
+//7KYU challenge
+/*
+Discourse (1051)
+DESCRIPTION:
+Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
+
+*/
+
+//my solution
+function disemvowel(str) {
+  let splitedStringArr = str.split('');
+  let unvoweledArr = [];
+  for (let character of splitedStringArr) {
+    if(character === 'a' || character === 'A' ||
+       character === 'i' || character === 'I' ||
+       character === 'e' || character === 'E' ||
+       character === 'o' || character === 'O' ||
+       character === 'u' || character === 'U') {
+      continue;
+    } else {
+      unvoweledArr.push(character);
+    }
+  }
+  let resultStr = unvoweledArr.join('');
+  return resultStr;
+}
+
 
 
 
