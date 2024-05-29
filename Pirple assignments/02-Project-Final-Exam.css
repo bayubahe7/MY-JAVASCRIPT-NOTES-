@@ -3,3 +3,19 @@ body{
   margin: 0;
   box-sizing: border-box;
 }
+main{
+  display: grid;
+  height: 100vh;
+  overflow-x: hidden;
+  grid-template-columns: 20vw 50vw 30vw;
+}
+.left-section{
+  background-color: yellow;
+  margin-bottom: 0;
+}
+.middle-section{
+  background-color: aqua;
+}
+.right-section{
+  background-color: lightpink;
+}
