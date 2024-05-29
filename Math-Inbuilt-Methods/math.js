@@ -31,13 +31,13 @@ console.log(Math.floor(0.3)); //0
 
 //The Math.fround() method returns the nearest 32-bit single precision float representation of a number.
 
-console.log(Math.fround(-2.60));
-console.log(Math.fround(-2.50));
+console.log(Math.fround(-2.60));//-2.5999999
+console.log(Math.fround(-2.50));//-2.5
 
 //The Math.trunc() method returns the integer part of a number.
 //The Math.trunc() method removes the decimals (does NOT round the number).
 
 console.log(Math.trunc(8.76)); //8
-console.log(Math.trunc(107.76));
+console.log(Math.trunc(107.76)); //107
 
 
