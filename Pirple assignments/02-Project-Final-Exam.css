@@ -135,9 +135,42 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 40%;
   height: 300px;
 }
 .title-container{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -220px;
+}
+.Visit_Rwanda_Logo{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profile-name{
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.time-ago{
+  font-size: 12px;
+  margin-right: 2px;
+  color: #3b3b3c;
+  cursor: pointer;
+}
+.follow-text{
+  font-size: 12px;
+  font-weight: bold;
+  color: #128cdf;
+  cursor: pointer;
+}
+.span-menu{
+  margin-left: 120px;
+  height: 20px;
+  cursor: pointer;
 }
