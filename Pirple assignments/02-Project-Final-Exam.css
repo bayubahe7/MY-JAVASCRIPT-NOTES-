@@ -31,9 +31,6 @@ main {
   margin-left: 250px;
   margin-top: 20px;
 }
-.right-section {
-  background-color: #fafafa;
-}
 .left-div {
   display: flex;
   align-items: center;
@@ -215,6 +212,78 @@ main {
   font-weight: 400;
   color:rgb(53, 52, 52);
 
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 80vh;
+  background-color: pink;
+  margin-left: 700px;
+  margin-top: -460px;
+}
+.profile-div-right{
+  display:flex;
+  margin-left: -20px;
+  align-items: center;
+  justify-content: center;
+}
+.acount-name-r > p{
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 60px;
+}
+.less-emphasized{
+  font-size: 10px;
+  font-weight: 500;
+  color: gray;
+}
+.Switch{
+  font-size: 10px;
+  font-weight: bold;
+  color: #128cdf;
+  cursor: pointer;
+}
+.Switch:hover{
+  color: #fff;
+  transition: 0.15s;
+}
+
+.right-section footer > p{
+  color: gray;
+  font-size: 10px;
+  margin-left: 0px;
+}
+.copyright-info{
+  margin-top: 10px;
+}
+.suggest-text-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.suggest-text-right p{
+  font-size: 10px;
+  margin-left: -10px;
+  font-weight: bold;
+  color: gray;
+  cursor: pointer;
+}
+.See-All{
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+  margin-left: 55px;
+}
+.See-All:hover{
+  color: gray;
+  transition: 0.15s;
+}
+.suggest-account-right{
+  display: flex;
+  flex-direction: column;
 }
 
 
