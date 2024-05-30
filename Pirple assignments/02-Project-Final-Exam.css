@@ -219,13 +219,12 @@ main {
   align-items: center;
   width: 30%;
   height: 80vh;
-  background-color: pink;
   margin-left: 700px;
   margin-top: -460px;
 }
 .profile-div-right{
   display:flex;
-  margin-left: -20px;
+  margin-left: -30px;
   align-items: center;
   justify-content: center;
 }
@@ -247,7 +246,7 @@ main {
   cursor: pointer;
 }
 .Switch:hover{
-  color: #fff;
+  color: gray;
   transition: 0.15s;
 }
 
@@ -272,7 +271,7 @@ main {
   cursor: pointer;
 }
 .See-All{
-  color: #fff;
+  color: #000;
   font-size: 10px;
   cursor: pointer;
   margin-left: 55px;
@@ -281,9 +280,11 @@ main {
   color: gray;
   transition: 0.15s;
 }
-.suggest-account-right{
-  display: flex;
-  flex-direction: column;
+ra{
+  margin-left: 110px;
+}
+#fol{
+margin-left: -30px;
 }
 
 
