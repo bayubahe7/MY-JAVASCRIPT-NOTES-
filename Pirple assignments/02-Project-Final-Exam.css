@@ -181,20 +181,26 @@ main {
 }
 .post-reaction{
   display: flex;
+  margin-left: 0px;
 }
 .post-reaction-img{
   height: 20px;
   margin-top: 5px;
   margin-right: 10px;
-  margin-left: -155px;
+  cursor: pointer;
 }
-.post-reaction-img-comment{
-  height: 20px;
-}
-.post-reaction-img-share{
-  height: 20px;
-}
-.post-reaction-img-bookmark{
-  height: 20px;
+.post-reaction-bmk{
+  height: 18px;
   margin-top: 5px;
+  margin-left: 205px;
+  cursor: pointer;
 }
+.likes-count{
+  font-weight: bold;
+  font-size: 10px;
+}
+.text-post{
+  font-size: 12px;
+}
+
+
