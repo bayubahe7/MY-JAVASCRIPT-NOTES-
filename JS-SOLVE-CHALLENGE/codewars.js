@@ -503,6 +503,44 @@ function disemvowel(str) {
   return resultStr;
 }
 
+/*
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a function which translates a given DNA string into RNA.
+
+For example:
+
+"GCAT"  =>  "GCAU"
+The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
+
+*/
+
+//solution
+
+//before answer let learn 'g' global flag and how it is used
+
+/*
+Syntax: To create a global regular expression, you can add the global flag g to a regular expression pattern using the following syntax: var regex = /pattern/g; Different approaches to use global regular expression in JavaScript: 
+
+
+The 'g' flag stands for "global" and is used to specify that a regular expression should perform a global search. This means that the regex engine will search for all occurrences of the pattern in the input string, rather than stopping after the first match.
+
+*/
+
+//answer now
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g,'U');
+ }
+ //above answer is similar as:
+
+ /*
+ function DNAtoRNA(dna) {
+  return dna.replaceAll('T','U');
+}
+*/
+
 
 
 
