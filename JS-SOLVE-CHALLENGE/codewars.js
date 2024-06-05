@@ -615,6 +615,30 @@ function feast(beast, dish) {
   return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1];
 }
 
+//8kyu:Grasshopper - Personalized Message
+/*
+DESCRIPTION:
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+
+case	return
+name equals owner	'Hello boss'
+otherwise	'Hello guest'
+*/
+
+//my solution
+function greet (name, owner) {
+  let message = "";
+  if (name === owner) {
+    message = 'Hello boss';
+    }
+    else{
+      message ='Hello guest'; 
+    }  
+    return message;
+}
+
 
 
 
