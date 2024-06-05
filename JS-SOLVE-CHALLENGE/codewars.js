@@ -654,7 +654,7 @@ function removeExclamationMarks(s) {
 }
 //alterinative answers using global flag and reduce()
 function removeExclamationMarks(s) {
-  return s.replace(/!/g, '');
+  return s.replace(/!/g, '');///!/g search all '!' and the second parameter of replace is what to replace searched item by global flag
 }
 
 //other ways
