@@ -657,6 +657,15 @@ function removeExclamationMarks(s) {
   return s.replace(/!/gi, '');
 }
 
+//other ways
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
+//else
+function removeExclamationMarks(s) {
+  return s.replaceAll('!', '');
+}
+
 
 
 
