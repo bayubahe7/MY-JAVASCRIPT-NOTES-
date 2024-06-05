@@ -706,8 +706,8 @@ Ternary operators are a powerful tool for concise and readable code when used ap
 */
 
 // kata of counting characters which are string and sum total numbers of characters which are numbers in array and return total sum of the numbers minus total number of string characters in the array
-/*
-Given a mixed array of number and string representation of integers,add up
+
+//my answer
 function mixedArrNumberAndStr (myArray){
   let sumOfNumbers = 0;
     let numberOfStrCharacter = 0;
@@ -723,6 +723,29 @@ function mixedArrNumberAndStr (myArray){
   return sumOfNumbers - numberOfStrCharacter;
 }
 console.log(mixedArrNumberAndStr([1,'E','h','m',3,6])); // Output: 10 - 3 = 7;
+
+//prince given kyu suspected to be 7 
+/*
+Given a mixed array of numbers and string representations of integers,add up the nonstring integers and subtract the total of the string integers.
+
+return as a number.
+*/
+
+function mixedArrNumberAndStr (myArray){
+  let sumOfNumbers = 0;
+    let numberOfStrCharacter = 0;
+
+  myArray.forEach(value => {
+    if (typeof value === 'number'){
+     sumOfNumbers += value;
+    } else if (typeof value === 'string'){
+      numberOfStrCharacter += Number(value);
+    }
+  });
+
+  return sumOfNumbers - numberOfStrCharacter;
+}
+console.log(mixedArrNumberAndStr([1,'5','2','4',3,6])); //Output: -1;
 
 
 
