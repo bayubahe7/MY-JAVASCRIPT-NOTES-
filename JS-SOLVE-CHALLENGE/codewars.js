@@ -654,7 +654,7 @@ function removeExclamationMarks(s) {
 }
 //alterinative answers using global flag and reduce()
 function removeExclamationMarks(s) {
-  return s.replace(/!/gi, '');
+  return s.replace(/!/g, '');
 }
 
 //other ways
@@ -665,6 +665,46 @@ function removeExclamationMarks(s) {
 function removeExclamationMarks(s) {
   return s.replaceAll('!', '');
 }
+
+//8kyu:Simple multiplication
+
+/*
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+*/
+//my solution
+function simpleMultiplication(number) {
+  let multiplyOfNumber = 0;
+if (number % 2 === 0){
+  multiplyOfNumber = number * 8;
+} else {
+  multiplyOfNumber = number * 9;
+}
+return multiplyOfNumber;
+}
+//other way
+function simpleMultiplication(number){
+  return (number % 2 == 0)? number * 8 : number * 9;
+}
+//the above method use ternary operators 
+//synthax
+//condition ? expression_if_true : expression_if_false
+/*
+**Key Points**
+
+Condition: This part before the ? evaluates to true or false.
+
+Expression if true: This part after the ? is executed if the condition is true.
+
+Expression if false: This part after the : is executed if the condition is false.
+
+**Best Practices**
+Use ternary operators for simple conditions to keep your code concise.
+
+Avoid complex or nested ternary operators as they can make the code harder to read and understand. In such cases, consider using if-else statements instead.
+
+Ternary operators are a powerful tool for concise and readable code when used appropriately.
+*/
+
 
 
 
