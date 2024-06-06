@@ -812,6 +812,8 @@ If you can't sleep, just count sheep!!
 Task:
 Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
 
+my explaination!
+The above prompt specifies that the input will always be a valid non-negative integer.So you don't need to check if the input is valid
 */
 
 //my answer
@@ -823,6 +825,15 @@ var countSheep = function (num){
     }
     return message;
 }
+//other method using array 
+function countSheep (num) {
+  const arr = [];
+  for (i = 1; i <= num; i++) {
+    arr.push(i + " sheep...");
+  }
+  return arr.join('');
+}
+
 
 
 
