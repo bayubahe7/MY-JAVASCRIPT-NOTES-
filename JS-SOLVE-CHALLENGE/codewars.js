@@ -859,6 +859,17 @@ function makeNegative(num) {
     return -num; 
   }
 }
+//other methods
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+//or using ternary operator
+
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
+//or arrow function with Math.abs()
+makeNegative = n => -Math.abs(n)
 
 
 
