@@ -875,7 +875,7 @@ makeNegative = n => -Math.abs(n);
 
 /*
 Convert number to reversed array of digits
-Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order
 
 Example(Input => Output):
 35231 => [1,3,2,5,3]
@@ -904,6 +904,28 @@ function digitize(n) {
 //or
 function digitize(n) {
   return String(n).split('').map(Number).reverse()
+}
+//8 kyu:Beginner Series #4 Cockroach
+
+/*
+The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+
+For example:
+
+1.08 --> 30
+Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+*/
+
+//my answer
+
+function cockroachSpeed(s) {
+  const kmincm = 100000;
+  const secinhour= 3600;
+  let convertedSpeed = 0;
+  if(s >= 0){
+    convertedSpeed = Math.floor((s * kmincm)/3600);
+  }
+  return convertedSpeed;
 }
 
 
