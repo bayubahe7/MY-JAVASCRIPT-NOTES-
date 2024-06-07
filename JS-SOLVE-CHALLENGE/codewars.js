@@ -897,6 +897,15 @@ function digitize(n) {
 function digitize(n) {
   return n.toString().split('').reverse().map(Number);
 }
+//the above codes are similar to this one:
+function digitize(n) {
+  return n.toString().split('').reverse().map(char => Number(char));
+}
+//or
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
+
 
 
 
