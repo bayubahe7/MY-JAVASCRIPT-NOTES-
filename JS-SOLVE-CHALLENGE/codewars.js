@@ -869,7 +869,36 @@ function makeNegative(num) {
   return num < 0 ? num : -num;
 }
 //or arrow function with Math.abs()
-makeNegative = n => -Math.abs(n)
+makeNegative = n => -Math.abs(n);
+
+//8 kyu:Convert number to reversed array of digits
+
+/*
+Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+Example(Input => Output):
+35231 => [1,3,2,5,3]
+0 => [0]
+*/
+
+//my adjusted number
+
+function digitize(n) {
+  //code here
+  let reversedArray = [];
+  const splitedNumbers = n.toString().split('');
+  for (let i = splitedNumbers.length-1; i >= 0; i--){
+    reversedArray.push(Number(splitedNumbers[i]));
+  }
+  return reversedArray;
+}
+//or
+function digitize(n) {
+  return n.toString().split('').reverse().map(Number);
+}
+
+
 
 
 
