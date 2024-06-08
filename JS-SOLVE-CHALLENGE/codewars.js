@@ -996,6 +996,13 @@ function abbrevName(name){
   return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
 }
 
+//or
+//For each word in the array, it extracts the first character (name[0]) and converts it to uppercase using toUpperCase().
+const abbrevName = (name) => {
+  return name.split(" ").map(name => name[0].toUpperCase()).join(".");
+};
+
+
 
 
 
