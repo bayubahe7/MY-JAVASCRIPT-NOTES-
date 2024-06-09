@@ -1097,6 +1097,29 @@ const quarterOf = (month) => {
   }
 }
 
+//other ways
+const quarterOfy = m => Math.ceil(m/3);
+
+//or
+const quarterOfyr = (month) => {
+  if (month <= 3) {
+    quarter = 1; }
+  else if (month <=6) {
+    quarter = 2; }
+  else if (month <=9) {
+    quarter = 3; }
+  else if (month <=12) {
+    quarter = 4; }
+  else {
+    console.log('month is not valid')
+  }
+  
+  return quarter  
+}
+//notice on above solution it is not important to always declare starting point on else if since the if statement by default does!
+
+
+
 
 
 
