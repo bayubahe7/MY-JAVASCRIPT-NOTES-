@@ -1002,6 +1002,17 @@ const abbrevName = (name) => {
   return name.split(" ").map(name => name[0].toUpperCase()).join(".");
 };
 
+//8 kyu:You Can't Code Under Pressure #1
+
+/*
+Code as fast as you can! You need to double the integer and return it.
+*/
+function doubleInteger(i) {
+  return i*2;
+}
+//or arrow function
+
+const doubleInteger = i  => i*2;
 
 
 
