@@ -1147,7 +1147,7 @@ function findNeedle(haystack) {
     }
   }
 }
-
+//now my next rank is 5kyu to hit
 
 
 
