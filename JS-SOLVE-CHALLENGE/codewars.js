@@ -1181,6 +1181,61 @@ function bmi(weight, height) {
 }
 
 
+//8kyu:Switch it Up!
+
+/*
+When provided with a number between 0-9, return it in words.
+
+Input :: 1
+
+Output :: "One".
+
+If your language supports it, try using a switch statement.
+
+*/
+
+//my refined answer
+function switchItUp(number) {
+  let text;
+  switch (number) {
+    case 0:
+      text = "Zero";
+      break;
+    case 1:
+      text = "One";
+      break;
+    case 2:
+      text = "Two";
+      break;
+    case 3:
+      text = "Three";
+      break;
+    case 4:
+      text = "Four";
+      break;
+    case 5:
+      text = "Five";
+      break;
+    case 6:
+      text = "Six";
+      break;
+    case 7:
+      text = "Seven";
+      break;
+    case 8:
+      text = "Eight";
+      break;
+    case 9:
+      text = "Nine";
+      break;
+    default:
+      text = "No match value found";
+  }
+  return text;
+}
+
+
+
 
 
 
