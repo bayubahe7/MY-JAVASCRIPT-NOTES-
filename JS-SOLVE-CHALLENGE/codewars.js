@@ -1148,6 +1148,37 @@ function findNeedle(haystack) {
   }
 }
 //now my next rank is 5kyu to hit
+//8kyu: calculate BMI
+
+/*
+Write function bmi that calculates body mass index (bmi = weight / height2).
+
+if bmi <= 18.5 return "Underweight"
+
+if bmi <= 25.0 return "Normal"
+
+if bmi <= 30.0 return "Overweight"
+
+if bmi > 30 return "Obese"
+
+*/
+
+//my answer
+function bmi(weight, height) {
+  let message = "";
+  const bmi = weight/Math.pow(height,2);
+  if( bmi <= 18.5){
+    message = "Underweight";
+  } else if(bmi <= 25.0){
+    message = "Normal";
+  } else if (bmi <= 30.0){
+    message = "Overweight";
+  } else {
+    message = "Obese";
+  }
+  
+  return message;
+}
 
 
 
