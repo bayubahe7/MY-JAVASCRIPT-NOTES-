@@ -75,6 +75,7 @@ This example uses the weekday number to calculate the weekday name:
 */
 
 switch (new Date().getDay()) {
+  //The break statement "jumps out" of a loop
   case 0:
     day = "Sunday";
     break;
@@ -97,3 +98,5 @@ switch (new Date().getDay()) {
     day = "Saturday";
 }
 //The result of day will be: agiven day you are on
+
+
