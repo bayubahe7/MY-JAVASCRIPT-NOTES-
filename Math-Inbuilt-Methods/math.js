@@ -40,4 +40,15 @@ console.log(Math.fround(-2.50));//-2.5
 console.log(Math.trunc(8.76)); //8
 console.log(Math.trunc(107.76)); //107
 
+//Math.pow() method returns the value of x to the power of y (xy).
+//Syntax:Math.pow(x, y)
+//x	is Required. and is The base
+//y is Required. and is The exponent
+
+//Return Value:A number representing the value of x to the power of y (xy).
+
+//example:
+let f = Math.pow(2, 4); //output: 16
+
+
 
