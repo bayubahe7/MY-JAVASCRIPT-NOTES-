@@ -1,6 +1,6 @@
 //challenge one reverse this two words //world and //word
 //Complete the solution so that it reverses the string passed into it.
-/*
+
 //'world'  =>  'dlrow'
 //'word'   =>  'drow'
 function solution(str){
@@ -17,6 +17,14 @@ function solution(str){
  let arrayReversed = arrayI.split('').reverse();
  let answer = arrayReversed.map(value => parseInt(value));
  console.log(answer);// [1, 3, 2, 5, 3]
+
+ //or
+
+ let digit = 12345;
+undefined
+digit = String(digit).split("").reverse().map(Number);
+//output (5) [5, 4, 3, 2, 1]
+//This method works as the one above
 
  //recall map method take every value in the array and save it back in the parameter you give it and then push it into new array
  //map filter and forEach method works on arrays
@@ -56,7 +64,7 @@ const divisor = 2;
 const arrayx = [1,2,3,4,5,6]; 
 
 console.log(arrayx.filter((value) => value % divisor === 0));
-*/
+
 /*
 Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 
@@ -73,7 +81,7 @@ The correct answer would be 17.
 
 Hint: Don't forget to check for bad values like null/undefined
 */
-/*
+
 function countSheeps(sheep) {
   let count = 0;
    for (let i=0; i < sheep.length; i++){
@@ -100,7 +108,7 @@ function findAverage(array) {
   }
   return sum/array.length;
 }
-*/
+
 
 /*
 The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
@@ -116,7 +124,7 @@ Examples
 2742 --> 28
 Note: this kata uses strict construction
 */
-/*
+
 
 //answer
 
@@ -124,7 +132,7 @@ function century (year) {
   let century = Math.ceil(year / 100); //Math.ceil () take number and round it up to the nearest number
   return century;
 }
-*/
+
 
 /*
 Our football team has finished the championship.
@@ -150,7 +158,7 @@ our team always plays 10 matches in the championship
 
 
 //solution
-/*
+
 function points(games) {
   let totalPoints = 0;
   for (let game of games) {
@@ -166,7 +174,7 @@ function points(games) {
   
   return totalPoints;
 }
-*/
+
 
 /*
 
@@ -177,7 +185,7 @@ Note: Only valid inputs will be given.
 */
 
 //solution
-/*
+
 function booleanToString(b){
   let result = "";
   if (b === true || b === false) {
@@ -185,24 +193,23 @@ function booleanToString(b){
   }
   return result;
 }
-*/
 
 //or 
 
-/*
+
 function booleanToString(b){
   if (typeof b == 'boolean') {
     return String(b);
   }
 }
 
-*/
+
 /*
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
 For example, for [1, 2, 2] it should return 9 because 1**2 + 2**2 + 2**2 = 9
 */
-/*
+
 function squareSum(numbers){
   let summation = 0;
     for (let i = 0; i < numbers.length; i++){
@@ -212,8 +219,8 @@ function squareSum(numbers){
   }
   console.log(squareSum([1, 2, 2]));
 
-  */
- /*
+  
+ 
 
   //Convert boolean values to strings 'Yes' or 'No'.
   //Solution
@@ -226,7 +233,7 @@ function squareSum(numbers){
     }
   }
 
-  */
+  
 
   /*
   Create a function which answers the question "Are you playing banjo?".
@@ -242,7 +249,7 @@ Names given are always valid strings.
 //solution
 
 //my answer
-/*
+
 
 function areYouPlayingBanjo(name) {
   if(name.charAt(0) === 'R'|| name.charAt(0) === 'r') {
@@ -253,9 +260,9 @@ function areYouPlayingBanjo(name) {
 }
 //or this from other person
 
-*/
 
-/*
+
+
 function areYouPlayingBanjo(name) {
   if (name[0].toLowerCase() === 'r') {
     return name + ' plays banjo';
@@ -263,7 +270,7 @@ function areYouPlayingBanjo(name) {
     return name + ' does not play banjo';
   }
 }
-*/
+
 /*
 Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
 
@@ -290,7 +297,7 @@ Advanced users may find this extremely easy and can easily write this in one lin
 // solution
 
 //my answer
-/*
+
 function sum (numbers) {
   "use strict";
 let sum = 0;
@@ -303,7 +310,7 @@ for (let number of numbers) {
 }
   return sum;  
 };
-*/
+
 /*
 Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
 
@@ -535,11 +542,11 @@ function DNAtoRNA(dna) {
  }
  //above answer is similar as:
 
- /*
+ 
  function DNAtoRNA(dna) {
   return dna.replaceAll('T','U');
 }
-*/
+
 //to reviewed
 
 /*
