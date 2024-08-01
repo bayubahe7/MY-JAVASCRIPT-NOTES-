@@ -9,7 +9,7 @@ true     | false    => true
 false    | true     => false
 false    | false    => false
 */
-
+//my answer
 function setAlarm(employed, vacation){
     //EMPLOYED,NO VACATION = TRUE ELSE FALSE
       if(employed === true && vacation === false){
@@ -18,3 +18,9 @@ function setAlarm(employed, vacation){
         return false;
       }
     }
+//other warriors
+const setAlarm = (employed, vacation) => employed && !vacation;//arrow function and not operator
+
+function setAlarm(employed, vacation){
+    return (employed && !vacation) ? true : false; // not operator and ternary operator
+  }
