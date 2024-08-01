@@ -42,4 +42,6 @@ function doubleChar(str) {
     }
     return result;
   }
+  //other warriors
+  const doubleChar = (str) => str.split("").map(c => c + c).join(""); //played  with array
   
