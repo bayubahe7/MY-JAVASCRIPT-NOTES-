@@ -69,3 +69,6 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 }
 //or
 const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+
+//very clean version
+const goals = (a,b,c) => a + b + c;
