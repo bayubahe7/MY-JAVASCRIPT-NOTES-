@@ -45,3 +45,27 @@ function doubleChar(str) {
   //other warriors
   const doubleChar = (str) => str.split("").map(c => c + c).join(""); //played  with array
   
+  //8kyu
+  /*
+  Messi goals function
+Messi is a soccer player with goals in three leagues:
+
+LaLiga
+Copa del Rey
+Champions
+Complete the function to return his total number of goals in all three leagues.
+
+Note: the input will always be valid.
+
+For example:
+
+5, 10, 2  -->  17
+*/
+//my answers
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+//or
+const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
