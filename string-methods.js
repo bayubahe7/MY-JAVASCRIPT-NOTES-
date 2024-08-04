@@ -21,3 +21,54 @@ console.log("Hello ".trimEnd());
 console.log("Hello".concat(' World!'));
 console.log("Hello".substring(2,4));
 console.log("Hello".match(/[A-Z]/g));//to learn it after all
+
+//More comprehensive string Methods
+
+/*
+Extracting String Characters
+There are 4 methods for extracting string characters:
+
+The at(position) Method
+The charAt(position) Method
+The charCodeAt(position) Method
+Using property access [] like in arrays
+*/
+
+//The charAt() method returns the character at a specified index (position) in a string:
+
+//Example
+let text = "HELLO WORLD";
+let char = text.charAt(0);//H
+
+//The at() method returns the character at a specified index (position) in a string.
+//ES2022 introduced the string method at():
+
+//Examples
+//Get the third letter of name:
+
+const name1 = "W3Schools";
+let letters = name1.at(2);
+
+//Get the third letter of name:
+
+const name4 = "W3Schools";
+let letter = name4[2];
+
+/*
+Note
+The at() method is a new addition to JavaScript.
+It allows the use of negative indexes while charAt() do not.
+Now you can use myString.at(-2) instead of charAt(myString.length-2).
+*/
+
+//Property Access [ ]
+//Example
+let texte = "HELLO WORLD";
+let charct = text[0];
+/*
+Note
+Property access might be a little unpredictable:
+It makes strings look like arrays (but they are not)
+If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+It is read only. str[0] = "A" gives no error (but does not work!)
+*/
