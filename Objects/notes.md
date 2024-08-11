@@ -13,3 +13,5 @@ const spaceObj = {
 };
 
 spaceObj["Space Name"]; // "Kirk"
+
+There is a shorthand way to add or subtract from a variable called compound assignment. For example, changing num = num + 5 to compound assignment would look like num += 5.
