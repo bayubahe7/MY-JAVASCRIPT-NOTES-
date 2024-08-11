@@ -21,7 +21,6 @@ function solution(str){
  //or
 
  let digit = 12345;
-undefined
 digit = String(digit).split("").reverse().map(Number);
 //output (5) [5, 4, 3, 2, 1]
 //This method works as the one above
