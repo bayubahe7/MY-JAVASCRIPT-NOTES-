@@ -12,3 +12,18 @@ for (let i = 0; i < 10; i++) {
 
 //In the example above, the break statement ends the loop ("breaks" the loop) when the loop counter (i) is 3.
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+The Continue Statement
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+
+This example skips the value of 3:
+
+Example
+*/
+for (let i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "<br>";
+  }
+
