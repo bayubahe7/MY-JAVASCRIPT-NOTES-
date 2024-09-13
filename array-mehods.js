@@ -7,9 +7,10 @@ console.log(ulEl);
 ulEl.innerHTML = `<li class="li-el"> let num = [1,3,5,7,9];</li>`;
 
 ulEl.innerHTML += `<li class="li-el">num.length: ${num.length}</li>`;
+ulEl.innerHTML += `<li class="li-el">num.at(1): ${num.at(1)}</li>`;
 
  
-console.log(num.at(1)); //return the number at index 1 which is 3 in our case
+//console.log(num.at(1)); //return the number at index 1 which is 3 in our case
 num.push(10); //add 10 in the array at the end of array
 console.log(num);
 num.pop(); //remove last element in the array
