@@ -1,11 +1,13 @@
 let num = [1,3,5,7,9];
 const divEl = document.getElementById('demo');
+const ulEl = document.querySelector('#ul-el');
 divEl.style.display = "block";
-const ulEl = `<ul></ul>`;
-divEl.innerHTML = ulEl;
-const liEl = `<li></li>`;
-ulEl.innerHTML = liEl;
-liEl.innerText = num.length;
+console.log(ulEl);
+//const liEl = document.getElementsByClassName('li-ul');
+
+ulEl.innerHTML = `<li class="li-el">${num.length}</li>`;
+
+ 
 console.log(num.at(1)); //return the number at index 1 which is 3 in our case
 num.push(10); //add 10 in the array at the end of array
 console.log(num);
