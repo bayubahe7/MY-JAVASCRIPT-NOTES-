@@ -4,8 +4,9 @@ const ulEl = document.querySelector('#ul-el');
 divEl.style.display = "block";
 console.log(ulEl);
 //const liEl = document.getElementsByClassName('li-ul');
+ulEl.innerHTML = `<li class="li-el"> let num = [1,3,5,7,9];</li>`;
 
-ulEl.innerHTML = `<li class="li-el">${num.length}</li>`;
+ulEl.innerHTML += `<li class="li-el">num.length: ${num.length}</li>`;
 
  
 console.log(num.at(1)); //return the number at index 1 which is 3 in our case
