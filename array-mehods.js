@@ -19,7 +19,7 @@ ulEl.innerHTML += `<li class="li-el">num.push(10) at the end of num array: ${num
 ulEl.innerHTML += `<li class="li-el">num.pop() remove last element in the array and return it: ${num.pop()}</li>`;
 ulEl.innerHTML += `<li class="li-el">num.push(10) at the end of num array: ${num}</li>`;
 num.shift(); //remove first element in the array
-console.log(num);
+//console.log(num);
 num.unshift(); //add  element to the beginning of array
 console.log(num);
 //num.fill(7); //take the array and fill every element with the number you give it
