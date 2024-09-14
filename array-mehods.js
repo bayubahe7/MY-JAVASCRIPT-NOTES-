@@ -12,7 +12,8 @@ ulEl.innerHTML += `<li class="li-el">num.at(1): ${num.at(1)}</li>`;
  
 //console.log(num.at(1)); //return the number at index 1 which is 3 in our case
 num.push(10); //add 10 in the array at the end of array
-console.log(num);
+//console.log(num);
+ulEl.innerHTML += `<li class="li-el">num.push(10) at the end of num array: ${num}</li>`;
 num.pop(); //remove last element in the array
 console.log(num);
 num.shift(); //remove first element in the array
