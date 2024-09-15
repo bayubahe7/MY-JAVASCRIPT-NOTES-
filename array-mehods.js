@@ -17,7 +17,7 @@ ulEl.innerHTML += `<li class="li-el">num.push(10) at the end of num array: ${num
 //num.pop(); //remove last element in the array
 //console.log(num);
 ulEl.innerHTML += `<li class="li-el">num.pop() remove last element in the array and return it: ${num.pop()}</li>`;
-ulEl.innerHTML += `<li class="li-el">num.push(10) at the end of num array: ${num}</li>`;
+ulEl.innerHTML += `<li class="li-el">num.pop() reduce the length of num array: ${num}</li>`;
 num.shift(); //remove first element in the array
 //console.log(num);
 num.unshift(); //add  element to the beginning of array
