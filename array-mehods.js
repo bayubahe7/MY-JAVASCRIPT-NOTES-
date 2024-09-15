@@ -2,7 +2,7 @@ let num = [1,3,5,7,9];
 const divEl = document.getElementById('demo');
 const ulEl = document.querySelector('#ul-el');
 divEl.style.display = "block";
-console.log(ulEl);
+//console.log(ulEl);
 //const liEl = document.getElementsByClassName('li-ul');
 ulEl.innerHTML = `<li class="li-el"> let num = [1,3,5,7,9];</li>`;
 
