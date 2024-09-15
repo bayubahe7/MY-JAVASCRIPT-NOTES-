@@ -20,8 +20,9 @@ ulEl.innerHTML += `<li class="li-el">num.pop() remove last element in the array 
 ulEl.innerHTML += `<li class="li-el">num.pop() reduce the length of num array: ${num}</li>`;
 num.shift(); //remove first element in the array
 //console.log(num);
-num.unshift(); //add  element to the beginning of array
-console.log(num);
+num.unshift(0); //add  element to the beginning of array
+//console.log(num);
+ulEl.innerHTML += `<li class="li-el">num.unshift() increase the length of num array and add new item at the beginning of the array: ${num}</li>`;
 //num.fill(7); //take the array and fill every element with the number you give it
 //console.log(num);
 console.log(num.reverse()); //sort in descending order
