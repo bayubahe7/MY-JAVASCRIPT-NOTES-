@@ -25,7 +25,8 @@ num.unshift(0); //add  element to the beginning of array
 ulEl.innerHTML += `<li class="li-el">num.unshift() increase the length of num array and add new item at the beginning of the array: ${num}</li>`;
 //num.fill(7); //take the array and fill every element with the number you give it
 //console.log(num);
-console.log(num.reverse()); //sort in descending order
+//console.log(num.reverse()); 
+ulEl.innerHTML += `<li class="li-el">num.reverse() reverse the num array: ${num.reverse()}</li>`;//sort in descending order
 console.log(num.includes(2));//check if the array contain a specified value and return a boolean value
 console.log(num.map(number => number * 2)); //return new array with each element doubled
 console.log(num.filter(number => number < 12)); //filter the array and return new array with few numbers according to the set condition.
